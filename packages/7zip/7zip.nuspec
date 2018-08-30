@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>7zip</id>
+    <version>16.04</version>
+    <title>7-Zip</title>
+    <authors>Igor Pavlov</authors>
+    <owners>Brendan McCoy</owners>
+    <licenseUrl>http://www.7-zip.org/license.txt</licenseUrl>
+    <projectUrl>http://www.7-zip.org/</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/02c21bebe5abb495a56747cbb9b4b5415c933fc0/icons/7zip.svg</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>7-Zip is a file archiver with a high compression ratio.
+
+### NOTE: The installer for 7-Zip is known to close the explorer process.
+This means you may lose current work. If it doesn't automatically restart explorer, type `explorer` on the command shell to restart it.</description>
+    <summary>7-Zip is a file archiver with a high compression ratio.</summary>
+    <tags>7zip zip archiver admin</tags>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
+    <dependencies>
+      <dependency id="7zip.install" version="[16.04]"/>
+    </dependencies>
+  </metadata>
+</package>
