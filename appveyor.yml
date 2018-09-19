@@ -88,7 +88,7 @@ artifacts:
 
 notifications:
 - provider: Slack
-   auth_token:
+  auth_token:
       secure: ED6Ye5xSiVoDKPTyl8iJJk1tmhXRVm68nU34HtvPaiieoNzLV5+yMeHh6ksKdapuBggFmSu4Be2RskRDHiWQKg==
   channel: cows-testing
   on_build_success: false
