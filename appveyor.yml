@@ -91,7 +91,6 @@ notifications:
   auth_token:
       secure: ED6Ye5xSiVoDKPTyl8iJJk1tmhXRVm68nU34HtvPaiieoNzLV5+yMeHh6ksKdapuBggFmSu4Be2RskRDHiWQKg==
   channel: cows_bot
-  template: "{Hi}, {commitid}"
   on_build_success: false
   on_build_failure: true
   on_build_status_changed: true
