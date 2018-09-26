@@ -19,7 +19,7 @@ environment:
   au_test_groups: 1
 
   # Github token to commit pushed packages to repository
-  github_user_repo: "tastreu/cows"
+  github_user_repo: "tastreu/testing-veeam-appveyor"
   github_api_key:
     secure: eO1Vfkdscfl+AYZ6AFtSotIW1317yW4Xu+/N8RbiH0xqJNpPfS7H+3pU+yl9LUPm
 
