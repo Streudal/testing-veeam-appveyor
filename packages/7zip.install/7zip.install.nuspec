@@ -20,7 +20,5 @@ This means you may lose current work. If it doesn't automatically restart explor
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
-	<file src="\\shares\casoft$\7zip\16.04\7z1604.msi" target="tools\installer"/>
-	<file src="\\shares\casoft$\7zip\16.04\7z1604-x64.msi" target="tools\installer"/>
   </files>
 </package>
