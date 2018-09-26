@@ -25,11 +25,11 @@ function global:au_GetLatest {
 
     $reLatestbuild = "(.*7-Zip.*)"
     $download_page.RawContent -imatch $reLatestbuild
-    $latestbuild = $Matches[0]
+    $latestbuild = $Matches[0-1]
 
     $reVersion = "\bv?[0-9]+\.[0-9]+\.[0-9]+(?:\.[0-9]+)(?:\.[0-9]+)?\b"
     $latestbuild -imatch $reVersion
-    $version = $Matches[0]
+    $version = $Matches[0-1]
     
     If (Get-ProcessorBits -eq 64){
     $urlPackage = "https://7-zip.org/a/7z$($version)-x64.exe"
