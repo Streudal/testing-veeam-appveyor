@@ -34,7 +34,7 @@ environment:
 init:
 - git config --global user.email "tastreu@oakland.edu"
 - git config --global user.name "tastreu"
-- git config --global core.tastreu false
+- git config --global core.safecrlf false
 
 install:
 - ps: 'Get-CimInstance win32_operatingsystem -Property Caption, OSArchitecture, Version | fl Caption, OSArchitecture, Version'
