@@ -1,3 +1,4 @@
+
 param([string[]] $Name, [string] $ForcedPackages, [string] $Root = $PSScriptRoot)
 
 $Options = [ordered]@{
@@ -38,7 +39,7 @@ $Options = [ordered]@{
             NoAppVeyor  = $false                            #  Markdown: do not show AppVeyor build shield
             UserMessage = "[Ignored](#ignored) | [History](#update-history) | [Force Test](https://gist.github.com/$Env:gist_id_test) | [Releases](https://github.com/$Env:github_user_repo/tags) | **TESTING AU NEXT VERSION**"       #  Markdown, Text: Custom user message to show
             NoIcons     = $false                            #  Markdown: don't show icon
-            IconSize    = 32
+            IconSize    = 32                                #  Markdown: icon size
             Title       = ''                                #  Markdown, Text: TItle of the report, by default 'Update-AUPackages'
         }
     }
@@ -104,4 +105,4 @@ $global:au_Root = $Root                                    #Path to the AU packa
 $global:info = updateall -Name $Name -Options $Options
 
 #Uncomment to fail the build on AppVeyor on any package error
-if ($global:info.error_count.total) { throw 'Errors during update' }
+#if ($global:info.error_count.total) { throw 'Errors during update' }
