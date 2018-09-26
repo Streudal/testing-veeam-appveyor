@@ -18,7 +18,7 @@ This means you may lose current work. If it doesn't automatically restart explor
     <tags>7zip zip archiver admin</tags>
     <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <dependencies>
-      <dependency id="7zip.install" version="[16.04]"/>
+      <dependency id="7zip.install" version="[$version]"/>
     </dependencies>
   </metadata>
 </package>
