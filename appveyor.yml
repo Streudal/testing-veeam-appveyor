@@ -21,7 +21,7 @@ environment:
   # Github token to commit pushed packages to repository
   github_user_repo: "tastreu/testing-veeam-appveyor"
   github_api_key:
-    secure: 5df509bd37c06b4d1ad2a22442c77f79a9830626
+    secure: r25ik5Ny4ZuWm99J9ZK3kcN0WNolZr23EdDJ6zHeE3OYMQllMM8vpDhjBHdoP1Fd
 
   github_username: 7NJ0MkWdCTjijOljoBL3Rw==
   github_password:
