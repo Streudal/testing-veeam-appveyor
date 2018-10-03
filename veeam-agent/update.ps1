@@ -1,14 +1,14 @@
 import-module au
 
 $url                 = 'https://forums.veeam.com/veeam-agent-for-windows-f33/current-version-t29537.html'
-$checksumTypeZip         = "MD5"
+$checksumTypeZip         = "sha256"
 
 function global:au_SearchReplace {
     @{
         'tools\chocolateyInstall.ps1'   = @{
-            "(^\s*[$]*url\s*=\s*)('.*')"                 = "`$1'$($Latest.URL32)'"
-            "(^\s*[$]*checksumZip\s*=\s*)('.*')"         = "`$1'$($Latest.Checksum32)'"
-            "(^\s*[$]*checksumTypeZip\s*=\s*)('.*')"     = "`$1'$($Latest.ChecksumType32)'"
+            "(^\s*[$]*url\s*=\s*)('.*')"                 = "`$1'$($Latest.URL)'"
+            "(^\s*[$]*checksumZip\s*=\s*)('.*')"         = "`$1'$($Latest.ChecksumZip)'"
+            "(^\s*[$]*checksumTypeZip\s*=\s*)('.*')"     = "`$1'$($Latest.ChecksumTypeZip)'"
         };
     }
 }
@@ -27,8 +27,9 @@ function global:au_GetLatest {
     $urlPackage = "https://download5.veeam.com/VeeamAgentWindows_$($version).zip"
 
     return @{
-        URL32                 = $urlPackage;
-        ChecksumType32        = $checksumTypeZip;
+        URL                   = $urlPackage;
+        Checksum              = $checksumZip
+        ChecksumType          = $checksumTypeZip;
         Version               = $version
     }
 }
