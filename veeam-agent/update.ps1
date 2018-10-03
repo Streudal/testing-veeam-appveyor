@@ -1,7 +1,7 @@
 import-module au
 
 $url                 = 'https://forums.veeam.com/veeam-agent-for-windows-f33/current-version-t29537.html'
-$checksumTypeZip     = "MD5"
+$checksumTypeZip     = ""
 
 function global:au_SearchReplace {
     @{
