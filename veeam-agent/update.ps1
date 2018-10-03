@@ -28,7 +28,6 @@ function global:au_GetLatest {
 
     return @{
         URL                   = $urlPackage;
-        Checksum              = $checksumZip
         ChecksumType          = $checksumTypeZip;
         Version               = $version
     }
