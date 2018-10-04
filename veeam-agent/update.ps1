@@ -31,8 +31,5 @@ function global:au_GetLatest {
     }
 }
 
-function global:au_AfterUpdate ($Package) {
-    Set-DescriptionFromReadme $Package -SkipFirst 3
-}
 
 update -ChecksumFor 64
