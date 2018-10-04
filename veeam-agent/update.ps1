@@ -12,10 +12,6 @@ function global:au_SearchReplace {
     }
 }
 
-function global:au_BeforeUpdate (){
-   $au_GalleryUrl = 'https://github.com/tastreu/testing-veeam-appveyor.git'
-}
-
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $url -UseBasicParsing -DisableKeepAlive
 
