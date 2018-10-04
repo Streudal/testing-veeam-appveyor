@@ -3,7 +3,7 @@ $PackageParameters = Get-PackageParameters
 
 $toolsDir = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)"
 
-$url 		     = ''
+$url 		      = ''
 $checksumZip         = ''
 $checksumTypeZip     = 'SHA256'
 
