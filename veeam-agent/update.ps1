@@ -35,4 +35,4 @@ function global:au_AfterUpdate ($Package) {
     Set-DescriptionFromReadme $Package -SkipFirst 3
 }
 
-update -NoCheckChocoVersion -ChecksumFor 64
+update -ChecksumFor 64
