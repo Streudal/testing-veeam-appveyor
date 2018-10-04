@@ -5,7 +5,7 @@ $toolsDir = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)"
 
 $url 		     = ''
 $checksumZip         = ''
-$checksumTypeZip     = 'MD5'
+$checksumTypeZip     = 'SHA256'
 
 Import-Module -Name "$($toolsDir)\helpers.ps1"
 
