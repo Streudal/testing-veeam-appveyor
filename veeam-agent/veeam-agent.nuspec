@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>veeam-agent</id>
-    <version>2.1.0.423</version>
+    <version>2.2.0.589</version>
     <title>Veeam Agent for Microsoft Windows</title>
     <authors>Veeam</authors>
     <owners>Simon Baerlocher, Eric Stevens</owners>
@@ -11,7 +11,14 @@
     <projectUrl>https://www.veeam.com/windows-cloud-server-backup-agent.html</projectUrl>
     <iconUrl>https://cdn.rawgit.com/ericjaystevens/chocolatey-veeam-agent/master/icon/veeam-agent.png</iconUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <description> Veeam® Agent for Microsoft Windows provides a simple solution for backing up Windows-based servers, desktops and laptops. With Veeam Agent for Microsoft Windows, you can easily back up your computer to an external hard drive, NAS (network-attached storage) share or a Veeam Backup & Replication™ repository. And, should ransomware encrypt your files, your system fails to boot, your hard drive crashes or an important file gets corrupted or accidentally deleted, you can recover what you need in minutes — like it never happened.</description>
+    <description><![CDATA[
+Veeam® Agent for Microsoft Windows provides a simple solution for backing up Windows-based servers, desktops and laptops. With Veeam Agent for Microsoft Windows, you can easily back up your computer to an external hard drive, NAS (network-attached storage) share or a Veeam Backup & Replication™ repository. And, should ransomware encrypt your files, your system fails to boot, your hard drive crashes or an important file gets corrupted or accidentally deleted, you can recover what you need in minutes — like it never happened.
+## Package Parameters
+| Parameter            | Default     | Comments                                   |
+| :---                 | :---        | :---                                       |
+| `/NoAutostartHard` | | Disables Veeam Agent Gui when starting Windows. |
+| `/CleanStartmenu` | | Removes frequently used Veeam shortcuts from the Start menu. |
+]]></description>
     <summary>With Veeam Agent for Microsoft Windows, you can easily back up your PC to an external hard drive, NAS (network-attached storage) share or a Veeam Backup &amp; Replication repository. And, if your system crashes, hard drive fails or a file gets corrupted or accidentally deleted, you can recover what you need in minutes — like it never even happened.</summary>
     <tags>veeam Backup admin</tags>
     <dependencies>
