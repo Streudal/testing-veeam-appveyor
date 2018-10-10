@@ -26,6 +26,8 @@ environment:
   github_username: 7NJ0MkWdCTjijOljoBL3Rw==
   github_password:
     secure: tnuxBA36uVmAjwRwnDjJqw==
+    
+  gist_id:
 
   # Chocolatey API key - to push updated packages
   api_key:
